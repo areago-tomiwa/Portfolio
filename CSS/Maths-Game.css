@@ -1,0 +1,188 @@
+#container0{
+    height: 400px;
+    width: 430px;
+    background-color:#95DBE5FF;
+    margin: auto;
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #078282FF;
+/*        box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]*/
+    position: relative;
+}
+
+#score0{
+    background-color: #004e92;
+    color: whitesmoke;
+    font-family: cursive;
+    padding: 3px;
+    position: absolute;
+    border-radius: 3px;
+    left: 325px;
+    display: none;
+    box-shadow: 0px 4px 0px  #000428;
+    -moz-box-shadow: 0px 4px 0px #000428;
+    -webkit-box-shadow: 0px 4px 0px #000428;
+}
+
+#correct{
+    position: absolute;
+    left: 30px;
+    background-color: #42e252;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    display: none;
+}
+
+#wrong{
+    position: absolute;
+    left: 25px;
+    background-color: #de401a;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    display: none;
+}
+
+#question{
+    width: 390px;
+    height: 150px;
+    margin: auto;
+    background-color: darkslategrey;
+    box-shadow: 0px 0px darkslategray;
+    font-size: 100px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    position: relative;
+    top: 35px;
+    font-family: cursive, sans-serif;
+    color: whitesmoke;
+}
+
+#instruction{
+    width: 390px;
+    height: 50px;
+    background-color: darkslategrey;
+    margin: auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    line-height: 45px;
+    position: relative;
+    color: whitesmoke;
+    font-family: cursive;
+    top: 40px;
+    box-shadow: 0px 4px rgb(31, 49, 49);
+}
+
+#choices{
+    width: 350px;
+    height: 60px;
+    margin: 5px 0px 0px 50px;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    float: left;
+    margin-right: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    top: 45px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.box:hover, #startreset0:hover{
+    background-color: darkslategray;
+    color: white;
+    box-shadow: 0px 4px rgb(31, 49, 49);
+    -moz-box-shadow: 0px 4px rgb(31, 49, 49);
+    -webkit-box-shadow: 0px 4px rgb(31, 49, 49);
+
+}
+.box:active, #startreset0:active{
+    background-color: darkslategray;
+    color: white;
+    box-shadow: 0px 0px rgb(31, 49, 49); 
+    -moz-box-shadow: 0px 0px rgb(31, 49, 49); 
+    -webkit-box-shadow: 0px 0px rgb(31, 49, 49); 
+    top: 50px;
+}
+#box4{
+    margin-right: 0;   
+}
+
+#startreset0{
+    width: 78px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.5);
+    margin: auto;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: cursive;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    top: 55px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;   
+}
+
+#timeremaining{
+    width: 130px;
+    padding: 1px;
+    position: absolute;
+    top: 340px;
+    left: 280px;
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    background: linear-gradient(#004e92, #72dff0, #004e92);
+    border-radius: 3px;
+    display: none;
+    font-weight: bolder;
+    box-shadow: 0px 4px #000428;
+    -moz-box-shadow: 0px 4px #000428;
+    -webkit-box-shadow: 0px 4px #000428;
+    /* visibility: hidden; */
+}
+#timeDiv{
+    margin-bottom: 0;
+}
+
+
+#gameOver0{
+    height: 210px;
+    width: 390px;
+    background: linear-gradient(#004e92, #95DBE5, #000428);
+    color: darkslateblue;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    border-radius: 20px;
+    top: 55px;
+    left: 20px;
+    z-index: 2;
+    display: none;
+    
+}

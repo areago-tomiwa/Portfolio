@@ -1,0 +1,33 @@
+main{
+    
+    background: url(Bg-Images/bg1.jpg);
+    background-color: black;
+    color: white;
+    background-repeat: 100% 100%;
+    background-size: cover;
+}
+header {
+    background: url(Bg-Images/creative-process-banners-set.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jumbotron{
+    opacity: 0.9;
+    position: relative;
+}
+#media-container{
+    border: 2px solid lavender;
+    border-radius: 20px;
+    height: 350px; 
+    display: grid;
+    align-items: center;
+    overflow: auto;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+
+}
+.media, #image, #media-body .media-body {
+    position: relative;
+}
+

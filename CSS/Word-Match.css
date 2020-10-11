@@ -1,0 +1,204 @@
+
+#container1{
+    position: relative;
+    width: 420px;
+    display: grid;
+    align-content: center;
+    margin: auto;
+    
+}
+
+#game {
+    height: 550px;
+    width: 410px;
+    background: linear-gradient(#004e92, #000428);
+    margin: auto;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px #000428;
+
+}
+
+
+#lining{
+    width: 390px;
+    height: 530px;
+    border-radius: 20px;
+    top: 8px;
+    left:10px;                                
+    position: relative;
+    border: 2px ridge white;
+}
+#screen {
+    width: 375px;
+    height: 200px;
+    background-color: #015fb1;
+    position: relative;
+    border-radius: 10px;
+    top: 5px;
+    left: 6px;
+
+}
+#main {
+    width: 360px;
+    height: 180px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    border-radius: 5px;
+    text-align: center;
+    
+
+}
+#wordDisplayed{
+    font-family: cursive, sans-serif;
+    font-size: 100px;
+    color: black;
+
+}
+#wordInput{
+    width: 300px;
+    height: 40px;
+    position: relative;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: grid;
+    align-content: center;
+    top: 15px;
+    left: 5px;
+}
+
+
+#info {
+    width: 375px;
+    height: 40px;
+    position: relative;
+    color: white;
+    font-family: cursive;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #015fb1;
+    text-align: center;
+    line-height: 45px;  
+    box-shadow: 0px 5px 0px 0px #00095e;
+    top: 22px;
+    left: 5px;
+}
+#keyboard {
+    width: 375px;
+    height: 170px;
+    border-radius: 10px;
+    position: relative;
+    top: 26px;
+    left: 5px;
+}
+
+#menu_container {
+    width: 410px;
+    height: 145px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#countDownContainer{
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(#004e92, #000428);
+    background: -webkit-linear-gradient(#004e92, #000428);
+    background: -o-linear-gradient(#004e92, #000428);
+    background: -moz-linear-gradient(#004e92, #000428);
+    border-radius: 50%;
+    display: grid;
+    align-content: center;
+    position: relative;
+    box-shadow: 0px 0px 30px 0px #000428;
+}
+#countDown {
+    height: 70px;
+    width: 70px;
+    background-color: 	#df0101;
+    border-radius: 50%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    margin: auto;
+    position: relative;
+}
+#countDownTime{
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+}
+#gameOver1{
+    height: 250px;
+    width: 360px;
+    background: linear-gradient(#004e92, #000428);
+    background: -webkit-linear-gradient(#004e92, #000428);
+    background: -o-linear-gradient(#004e92, #000428);
+    background: -moz-linear-gradient(#004e92, #000428);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 26px;
+    z-index: 2;
+    display: none;
+}
+.indicator{
+    background: linear-gradient(#004e92, #000428);
+    height: 100px;
+    width: 150px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px #000428;
+
+}
+
+#title {
+    background-color: red;
+    width: 115px;
+    height: 5px;
+    position: relative;
+    top: 2px;
+    left: 18px;
+    border-radius: 30px;
+}
+#match{
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    padding: 11px;
+    display: none;
+
+}
+#score1{
+    position: absolute;
+    background-color: #ffdb0e;
+    color: white;
+    top: 30px;
+    left: 20px;
+    padding: 0px 5px 0px 5px;
+    display: none;
+}
+#different{
+
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    padding: 11px;
+    display: none;
+}
+
+#startreset1 {
+    position: relative;
+    top: 25px;
+    left: 170px;
+    margin: auto;
+}

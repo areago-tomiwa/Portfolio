@@ -1,0 +1,201 @@
+.mathsTutorial{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#container{
+    display: grid;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    background-size: 100% 100%;
+}
+.clear {
+    clear: both;
+    height: 20px;
+}        
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 95%;
+    justify-content: space-between;
+
+}
+#header-left {
+    margin: 0px 30px 0px 0px;
+}
+#header-left h1 {
+    font-weight:200;
+    color:#861bbf;
+    font-size:50px;
+    margin-top:25px;
+}
+#header-right {
+    width: 35%;
+    height: 80%;
+    padding: 20px;
+    margin: 20px 0px 0px 0px;
+    background: linear-gradient(to bottom, #DCF0A5, #BFEB64);
+}
+#search-Input {
+    width: 200px;
+    height: 28px;
+    border: 1px solid #C8D03E;
+    padding-left: 5px;
+    margin-right: 18%;
+
+    background: white url(Images/active-search\ -\ Copy.png) right no-repeat;
+}	
+
+.button{
+    height:30px;
+    color:rgb(66, 35, 35);
+    font-size:14px;
+    font-weight:bold;
+    background-color:#A751D6;
+    border:0px;
+    border-radius: 3px;
+}
+
+
+a {
+    text-decoration: none;
+}
+#menu {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom, #F4F28A, #DADA41);
+    height: 100px;
+    width: 95%;
+}
+#menu ul li {
+    float: left;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding-right: 25px;
+    height: 45px;
+    line-height: 40px;
+    color: blue;
+    font-size: 20px;
+    font-weight: lighter;
+    border-right: 1px solid blue;
+}
+#menu ul li a {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: font-size 0.3s ease;
+
+}
+#menu ul li a:hover, #menu ul li a#home {
+    font-weight: bold;
+    padding: 0px 10px 0px 10px;
+    font-size: 24px;
+    color: #c466d3;
+    
+}
+#menu ul li#contact {
+    border-right:0px;
+
+}
+#intro {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #DCF0A5, #BFEB64);
+    height: 290px;
+    width: 95%;
+    margin: auto;
+    color: rgb(138,127,1);
+
+}
+#intro h1 {
+    font-size: 50px;
+    font-weight: normal;
+    word-spacing: 5px;
+    padding: 15px 0px 0px 40px;
+
+}
+#intro p {
+    font-size: 24px;
+    word-spacing: 4px;
+    font-weight: normal;
+    text-align: justify;
+    padding: 0px 30px 0px 40px;
+}
+#main {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: auto;
+    border-radius: 3px;
+    justify-content: space-between;
+    width: 95%;
+
+}
+#main-left {
+    margin-right: 0.5%;
+}
+#main-left h1, #main-right h1 {
+    color: #B314DB;
+    padding: 0px 0px 10px 35px;
+
+}
+#main-right {
+    margin-left: 0.5%;
+}
+#main-right, #main-left {
+    width: 49%;
+    border: 1px solid lightgreen;
+    border-radius: 3%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 580px;
+}
+
+#main-right a, #main-left a {
+    color: #0000EE;
+    font-size: 20px;
+    
+}
+#main-left li {
+    list-style-type: none;
+    list-style-image: url(Images/arrow-right\ -\ Copy.png);
+    padding: 5px 0px 5px 5px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+#main-right li {
+    list-style-type: none;
+    list-style-image: url(Images/mark_tick\ -\ Copy.png);
+    padding: 5px 0px 15px 0px;
+    font-size: 20px;
+    margin-left: 60px;
+
+}
+#main-right li a, #main-left li a {
+    transition: font-size 0.3s ease;
+}
+#main-right li a:hover, #main-left li a:hover {
+    font-weight: bold;
+    font-size: 24px;
+    color: #bb40ce;
+
+    
+}
+
+
+footer {
+    background: linear-gradient(to bottom, #F4F28A, #DADA41);
+    height:90px;
+    width: 95%;
+    margin: auto;
+}
+
+#footer{
+    padding: 25px 0px 0px 30px;
+    color: black;
+}
+

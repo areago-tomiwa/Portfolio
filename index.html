@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script src="JS/JQuery_uncompressed.js"></script>
+    <link rel="stylesheet" href="CSS/Portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Areago Tomiwa</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <Script src="JS/bootstrap.min.js"></Script>
+    <link rel="stylesheet" href="CSS/Maths-Game.css">
+    <link rel="stylesheet" href="CSS/Word-Match.css">
+      <style>
+        html body * {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .links{
+          font-family: cursive;
+          text-decoration: none;
+          color: #28A745;
+          font-size: larger;
+          transition: 0.5s;
+        }
+        #dButton{
+          font-family: cursive;
+          text-decoration: none;
+          color: #DC3545;
+          font-size: larger;
+          transition: 0.5s;
+        }
+        #whatsapp{
+          position: fixed;
+          display: grid;
+          align-items: center;
+          border-radius: 50%;
+          right: 0;
+          bottom: 0px;
+          width: 55px;
+          height: 55px;
+        }
+      </style>
+  
+  </head>
+  <body class=" bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="badge badge-pill badge-success" style="border-radius: 10px;">
+            <a class="navbar-brand" href="#">
+              <small class="pl-3" style="font-weight: bold;">A</small><span style="font-family: cursive;">T</span><small style="font-weight: bold;">S</small>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="work" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work</a>
+              <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#"> Maths Game  <small class="badge badge-pill badge-success ml-3" data-toggle="modal" data-target="#mathsGame">play demo</small></a>
+                <a class="dropdown-item" href="#"> Word Match  <small class="badge badge-pill badge-success ml-3" data-toggle="modal" data-target="#wordMatchGame">play demo</small></a>
+                <label for="dropdown-item" class="dropdown-toggle ml-4"> Album Website </label><br>
+                
+                
+                <a class="dropdown-item badge badge-pill badge-success ml-4 w-auto" href="Album.html" style="margin-top: 0;" >Explore</a>  
+                <a class="dropdown-item badge badge-pill badge-success w-auto" href="#" data-toggle="modal" data-target="#album">Preview</a><br>
+                <a class="dropdown-toggle ml-4" style="color: #212529; text-decoration: none;" href="#" id="mathsTutorialWebsite" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Maths Tutorial Website
+                </a>
+                <div class="dropdown-menu bg-secondary text-light" aria-labelledby="mathsTutorialWebsite">
+                  <a class="badge badge-pill badge-success ml-3" href="Maths_Tutorial_Website.html" >Explore</a>  
+                  <a class="badge badge-pill badge-success" href="#" data-toggle="modal" data-target="#mathsTutorial">Preview</a>
+                </div>
+              </div>
+
+              
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              
+              <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Web Design</a>
+                <a class="dropdown-item" href="#">Web Development</a>
+                <a class="dropdown-item" href="#">Software Installations</a>
+                <a class="dropdown-item" href="#">Laptop Repairs</a>
+                <a class="dropdown-toggle text-white ml-2" href="#" id="pvSystem" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Solar Power System
+                </a>
+                <div class="dropdown-menu bg-secondary text-light" aria-labelledby="pvSystem">
+                  <a class="dropdown-item" href="#">Design and Sizing</a>
+                  <a class="dropdown-item" href="#">Installation</a>
+                  <a class="dropdown-item" href="#">Load Separation</a>
+                  <a class="dropdown-item" href="#">Maintenance</a>
+                  <a class="dropdown-item" href="#">Inverter (PCB) Repair</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="contact" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+              <div class="dropdown-menu bg-secondary text-light" aria-labelledby="contact">
+                <label for="Contact" class=" ml-5">Areago Tomiwa</label>
+                <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=2348080653108&text=" ><img class="icon" src="Images/whatsapp.png" height="30px" width="30px" alt="Whatsapp"> +2348080653108</a>
+                <a class="dropdown-item" href="mailto:areago.tomiwa@gmail.com"> <img class="icon" height="30px" width="30px" src="Images/mail.png" alt="Mail"> areago.tomiwa@gmail.com</a>
+                <a class="dropdown-item" href="https://www.facebook.com/Areago.Thormeewa" ><img class="icon" src="Images/fb-img.png" height="30px" width="30px" alt="Facebook">Profile: Areago Tomiwa</a>
+                <a class="dropdown-item" href="https://g.co/kgs/iLNB3o"> <img class="icon" height="30px" width="30px" src="Images/location.png" alt="Location"> 4, Akinwale street, Ogba, Lagos.</a>
+
+              </div>
+
+            </li>
+          </ul>
+
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" autocomplete="off">Search</button>
+          </form>
+        
+        </div>
+
+    </nav>
+
+    <nav class=" bg-dark text-light text-center" style="border-bottom-right-radius: 30px; border-bottom-left-radius: 30px;">
+      <h2 style="font-family: monospace;">Portfolio</h2>
+    </nav>
+
+    
+    <!--Maths Game Modal -->
+    <div class="modal fade" id="mathsGame" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="staticBackdropLabel">Maths Game</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body bg-dark">
+            <div id="container0">
+              <div id="score0">
+                  Score: <span id="scorevalue">0</span>
+              </div>
+              <div id="correct">
+                  Correct
+              </div>
+              <div id="wrong">
+                  Try again
+              </div>
+              <div id="question">
+                  
+              </div>
+              <div id="instruction">
+                  Click on the correct answer
+              </div>
+              <div id="choices">
+                  <div id="box1" class="box"></div>
+                  <div id="box2" class="box"></div>
+                  <div id="box3" class="box"></div>
+                  <div id="box4" class="box"></div>
+              </div>
+              <div id="startreset0">
+                  Start
+              </div>
+              <div id="timeremaining">
+                <p id="timeDiv">Time remaining</p><span id="timeremainingvalue">60</span>sec
+              </div>
+              <div id="gameOver0">
+                  
+              </div>
+            </div>
+            <script src="JS/Game_Script.js"></script>
+          </div>
+          <div class="modal-footer bg-dark text-white">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Dismiss</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!--Word Match Modal -->
+    <div class="modal fade" id="wordMatchGame" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="wordMatchGameLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="wordMatchGameLabel">Word Match</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body bg-dark">
+            <div id="container1">
+              <div id="menu_container">
+                <div class="indicator">
+                  <div id="title">
+
+                  </div>
+                  <div id="score1">
+                    <h3>
+                        Score: <span id="scoreValue">0</span>
+                    </h3>
+                  </div>
+                </div>
+                <div id="countDownContainer">
+                  <div id="countDown">
+                    <span id="countDownTime"></span>
+                  </div>
+                </div>
+                <div class="indicator">
+                  <div id="title">
+                  </div>
+                  <div id="different">
+                    <img src="Images/cancel - Copy.png" style="height: 60px; width: 60px;" alt="">
+                  </div>
+                  <div id="match">
+                    <img src="Images/Tick-icon1 - Copy.png" style="height: 60px; width: 60px;" alt="">
+                  </div>
+                </div>
+                    
+              </div>
+              <hr class=" my-1">
+              <div id="game">
+                <div id="gameOver1">
+                </div>
+                <div id="lining">
+                  <div id="screen" class="bg-primary">
+                    <div id="main">
+                        <p id="wordDisplayed"></p>
+                    </div>
+                  </div>
+                  <div id="input">
+                    <input id="wordInput" style="font-family: cursive; width: 320px;" class="form-control m-auto" type="text" autocomplete="off" value="" placeholder="Start typing...">
+                  </div>
+                    <div id="info" class=" bg-primary">
+                      Type correct letters to match displayed words
+                    </div>
+                    <button id="startreset1" class="btn btn-primary text-white mt-2 mb-1 pl-3 pr-3 pt-1 pb-1" style="border-radius: 30px; border: none;">Start</button>
+                    <div id="keyboard" class=" bg-primary">
+                        <img class="" src="Images/Black keyboard - Copy - Copy.png" style =" margin-left: 3px; width: 370px; height: 165px; border-radius: 10px;" alt="keyboard">
+                    </div>
+                </div>
+              </div>
+                
+            </div>       
+            <script src="JS/Word-Match.js"></script> 
+          </div>
+          <div class="modal-footer bg-dark text-white">
+            <a class="btn border border-success links" data-dismiss="modal">Dismiss</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maths Tutorial Modal -->
+    <div class="modal fade" id="mathsTutorial" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="staticBackdropLabel">Waths Tutorial Website(Pictorial View)</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body bg-dark">
+            <img style="height: 600px; width: 460px;" src="Images/Maths Tutorial.png" alt="Maths Tutorial Website">
+          </div>
+          <div class="modal-footer bg-dark text-white">
+            <a class="btn border border-success links" data-dismiss="modal">Dismiss</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Album Modal -->
+    <div class="modal fade" id="album" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="staticBackdropLabel">Album Website</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body bg-dark">
+            <img style="height: 600px; width: 460px;" src="Images/Album.png" alt="Album">
+          </div>
+          <div class="modal-footer bg-dark text-white">
+            <a class="btn border border-success links" data-dismiss="modal">Dismiss</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+          
+    <header>
+      <div class="jumbotron text-center bg-dark">
+        <div id="media-container" class=" bg-transparent container-fluid m-auto col-sm-12 col-md-8 col-lg-7">
+          <div class=" bg-transparent row m-auto col-sm-12 col-md-12 col-lg-12">
+            <div id="image-container" class=" bg-transparent  col-lg-4 col-md-6 col-sm-8">
+              <img id="image" src="Images/Areago-Tomiwa.jpg"  style="height: 230px; border-radius: 20px;" class="p-1 col-lg-12 col-sm-12 col-md-12" alt="Tomiwa">
+            </div>
+            <div id=" media-body" class="bg-transparent pl-2 pr-2 col-sm-12 col-md-6 col-lg-7">
+              <div class="media-body text-left">
+                <h2 class=" text-light mt-0 text-nowrap">Areago Tomiwa</h2>
+                <h5 class=" text-light">Are you in search of a Web Designer <br> Or Solar Power System Engineer?</h5>
+                <p class=" text-light mb-0">You're in luck, let me help you design and install a solar power system, or build fast responsive websites with an impressive user experience and interface.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <!--Static backdrop-->
+        <!-- Button trigger modal -->
+        <a class="links btn border-success mt-3 mb-3 pl-5 pr-5 pt-3 pb-3" style="border-radius: 30px; border: 4px solid;" data-toggle="modal" data-target="#contactMail">Send a Mail</a>
+        <hr class="my-1">
+      </div>
+      
+      <!-- Mail Dropbox Modal -->
+      <div class="modal fade" id="contactMail" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header text-light bg-dark">
+              <h5 class="modal-title" id="staticBackdropLabel">Mail Dropbox</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body bg-dark text-light">
+              <form>
+                <label for="email" style="font-weight: bold;">To:</label><br>
+                <label for="email" style="font-weight:lighter;">areago.tomiwa@gmail.com</label><br><br>
+                
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">Your mail has been encrypted with the server!</small>
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Enter your message:</label>
+                  <textarea class="form-control bg-light" name="" id="text" cols="30" rows="10" style="border-radius: 20px;"></textarea>
+                </div>
+                
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="notifier">
+                  <label class="form-check-label" for="exampleCheck1">Send me Feedback</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer bg-dark">
+              <a id="dButton" class="btn border-danger" data-dismiss="modal">Dismiss</a>
+              <a id="sButton" href="mailto:areago.tomiwa@gmail.com" class=" links btn border-success">Send</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      
+      <div class="container-fluid">
+        <div class=" col-12"><h2>My Services</h2>
+          <div class=" row">
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
+              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 500px; border-radius: 20px;"  src="Images/Modal_Word-Match21.png" class="d-block w-100" alt="Word-Match21">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="font-family: cursive; color: black; font-weight: bolder;">Word Match</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img style="height: 500px; border-radius: 20px;"  src="Images/Maths-Game.png" class="d-block w-100" alt="Maths-Game">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="font-family: cursive; color: black; font-weight: bolder;">Maths Game</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img style="height: 500px; border-radius: 20px;"  src="Images/Album - Copy.png" class="d-block w-100" alt="Album">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5  style="font-family: cursive; color: black; font-weight: bolder;">Album</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img style="height: 500px; border-radius: 20px;" src="Images/Maths Tutorial.png" class="d-block w-100" alt="Maths_Tutorial_Website">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5  style="font-family: cursive; color: black; font-weight: bolder;">Maths Tutorial Website</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img style="height: 500px; border-radius: 20px;" src="Images/Maths Tutorial.png" class="d-block w-100" alt="Maths_Tutorial_Website">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Web Design</h5>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div><hr class=" my-1">
+            
+            <div class=" col-sm-12 col-md-6 col-lg-6 mt-3">
+              <div id="occupation" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#occupation" data-slide-to="0" class="active"></li>
+                  <li data-target="#occupation" data-slide-to="1"></li>
+                  <li data-target="#occupation" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 500px; border-radius: 20px;"  src="Carousel-Images/4kva.jpg" class="d-block w-100" alt="html">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Inverter Installation</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img style="height: 500px; border-radius: 20px;"  src="Carousel-Images/pv-10kva.jpg" class="d-block w-100" alt="Coding-laptop">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Solar Power System</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img style="height: 500px; border-radius: 20px;" src="Carousel-Images/10kva Inverter.jpg" class="d-block w-100" alt="office-layout">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Solar Power System Installation</h5>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#occupation" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#occupation" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><hr class=" my-3">
+
+        <div id="carouselExampleFade" style="border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;" class="container-fluid row bg-dark m-auto col-md-12 col-lg-12 carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner mt-3">
+            <div class="carousel-item active">
+              <img style="height: 700px;" src="Images/coding.jpg" class="d-block w-100" alt="office-layout">
+            </div>
+            <div class="carousel-item">
+              <img style="height: 700px;" src="Images/Website.jpg" class="d-block w-100" alt="Website">
+            </div>
+            <div class="carousel-item">
+              <img style="height: 700px;" src="Carousel-Images/Delite0.png" class="d-block w-100" alt="Delite">
+            </div>
+            <div class="carousel-item">
+              <img style="height: 700px;" src="Carousel-Images/Pv-maintenance.png" class="d-block w-100" alt="Maintenance">
+            </div>
+            <div class="carousel-item">
+              <img style="height: 700px;" src="Carousel-Images/Zenith-Kogi-pv.jpg" class="d-block w-100" alt="Zenith-kogi-Inverter">
+            </div>
+            <div class="carousel-item">
+              <img style="height: 700px;" src="Carousel-Images/Zenith-kogi-Inverter.jpg" class="d-block w-100" alt="Zenith-kogi-Inverter">
+            </div>
+            <div class="carousel-item">
+              <img style="height: 700px;" src="Carousel-Images/Repair-in-progress.jpg" class="d-block w-100" alt="Repair-in-progress">
+            </div>
+
+          </div>
+
+          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <div class=" row bg-dark text-center justify-content-center m-auto col-12">
+            <a class="links btn border-success mt-3 mb-3 pl-5 pr-5 pt-3 pb-3" href="#" style="border-radius: 30px; border: 4px solid;">View all Services</a>
+        </div>
+      </div><hr class="my-4">
+      <div class="container-fluid">
+          <div class=" col-12"><h2>My Work</h2>
+            <div class="row bg-transparent justify-content-around m-1">
+              
+              <div class="mt-1 bg-transparent col-md-5 col-lg-5"  style="display: grid; align-items: center;">
+                <div class="card bg-dark text-white m-auto col-md-12 col-lg-12 col-sm-12 col-xl-12" style="border-radius: 10px;">
+                  <img src="Images/Album - Copy.png" class="card-img-top h-50 mt-3 img-thumbnail col-lg-12" alt="Album">
+                  <div class="card-body">
+                    <h3 class="card-text text-center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Album</h3>
+                    <p class="card-text text-center">
+                      This website gives-off veiw of Images with captions of a Particular album. 
+                      It has the capacity to accommodate as many pictures a photo album can hold.
+                    </p>
+
+                  </div>
+                </div>
+                <div class=" row bg-transparent text-center justify-content-center m-auto col-12">
+                  <a class="links btn border-success mt-1 mb-1 pl-3 pr-3 pt-1 pb-1"  href="Album.html" style="margin: auto; border-radius: 30px; border: 4px solid;">View Work</a>
+                </div>
+              </div>
+              <div class="mt-1 bg-transparent col-md-5 col-lg-5" style="display: grid; align-items: center;">
+                <div class="card bg-dark text-white m-auto col-md-12 col-lg-12 col-sm-12 col-xl-12" style="border-radius: 10px;">
+                  <img src="Images/Maths Tutorial.png" class="card-img-top h-50 mt-3 img-thumbnail col-lg-12" alt="Maths Tutorial">
+                  <div class="card-body">
+                    <h3 class="card-text text-center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Maths Tutorial Website</h3>
+                    <p class="card-text text-center">
+                      This Website serves the purposes of having interactive session with a Mathematics Teacher. 
+                      It Indicates the effectiveness and duration of teaching session.
+                    </p>      
+                  </div>
+                </div>
+                <div class=" row bg-transparent text-center justify-content-center m-auto col-12">
+                  <a class="links btn border-success mt-1 mb-1 pl-3 pr-3 pt-1 pb-1" href="Maths_Tutorial_Website.html" style="margin: auto; border-radius: 30px; border: 4px solid;">View Work</a>
+                </div>
+              </div>
+            </div><hr class=" my-1">
+            <div class="row bg-transparent justify-content-around m-1">
+              
+              <div class="mt-1 bg-transparent col-md-5 col-lg-5"  style="display: grid; align-items: center;">
+                <div class="card bg-dark text-white m-auto col-md-12 col-lg-12 col-sm-12 col-xl-12" style="border-radius: 10px;">
+                  <img src="Images/Modal_Word-Match21.png" class="card-img-top h-50 mt-3 img-thumbnail col-lg-12" alt="Word Match">
+                  <div class="card-body">
+                    <h3 class="card-text text-center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Word Match</h3>
+                    <p class="card-text text-center">
+                      This Game enhances the typing skils of a user with the aid of the randam words displayed on the screen as well as the limited time.
+                    </p>
+                  </div>
+                </div>
+                <div class=" row bg-transparent text-center justify-content-center m-auto col-12">
+                  <a class="links btn border-success mt-1 mb-1 pl-3 pr-3 pt-1 pb-1" style="margin: auto; border-radius: 30px; border: 4px solid;" data-toggle="modal" data-target="#wordMatchGame">View Work</a>
+                </div>
+              </div>
+              <div class="mt-1 bg-transparent col-md-5 col-lg-5" style="display: grid; align-items: center;">
+                <div class="card bg-dark text-white m-auto col-md-12 col-lg-12 col-sm-12 col-xl-12" style="border-radius: 10px;">
+                  <img src="Images/Maths-Game.png" class="card-img-top h-50 mt-3 img-thumbnail col-lg-12" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-text text-center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Maths Game</h3>
+                    <p class="card-text text-center">
+                      This game improves the fast approach in multiplication of numbers in Mathematics. 
+                      It displays random numbers to be multiplied as well as four boxes, 
+                      each displaying numbers with a correct answer inside one of the boxes.
+                    </p>
+                  </div>
+                </div>
+                <div class=" row bg-transparent text-center justify-content-center m-auto col-12">
+                  <a class="links btn row border-success mt-1 mb-1 pl-3 pr-3 pt-1 pb-1" href="#" style="margin: auto; border-radius: 30px; border: 4px solid;"  data-toggle="modal" data-target="#mathsGame">View Work</a>
+                </div>
+              </div> 
+            </div><hr class=" my-1">
+            
+            <div class="bg-transparent m-auto col-lg-12" style="display: grid; align-items: center;">
+              <a href="#" class=" links btn m-auto border-success pt-2 pb-2 pl-5 pr-5" style="border-radius: 30px; border: 4px solid; cursor: pointer;">View all Work</a>
+            </div><hr class=" my-1">
+            
+          </div>  
+
+        </div>
+    </main>
+    <div id="whatsapp">
+      <a href="https://api.whatsapp.com/send?phone=2348080653108&text="><img src="Images/whatsapp.png" height="50px" width="50px"  alt="Whatsapp"></a>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid text-center justify-content-center text-light bg-dark">
+      <h1 class=" bg-success text-center badge badge-pill badge-success" style="margin: auto; width: max-content; font-size: x-large;" >
+        <small style="font-weight: bold;">A</small><span style="font-family: cursive;">T</span><small style="font-weight: bold;">S</small>
+      </h1>
+      <h3 style="font-family: monospace;">Areago Tomiwa</h3>
+      <p class=" font-italic" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Copyright © 2020. ATS Technology Portfolio Inc. All rights reserved. Privacy & Legal Policies.</p>
+
+    </footer>
+    <!-- Footer -->
+
+    <script src="js/Portfolio.js"></script>
+        
+  </body>
+</html>
